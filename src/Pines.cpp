@@ -7,3 +7,7 @@ void leerLeds() {
     pinMode(LED_AZUL, OUTPUT);
     pinMode(BUZZER, OUTPUT);
 }
+
+void configurarSensorPolvo() {
+    pinMode(SENSOR_POLVO, INPUT);
+    }
