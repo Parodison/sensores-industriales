@@ -8,6 +8,7 @@
 #include "WebsocketHandler.h"
 #include "SensorAireHandler.h"
 #include "SensorTemperaturaHandler.h"
+#include "SensorPolvoHandler.h"
 
 
 void setup() {
@@ -24,4 +25,5 @@ void loop() {
   websocketLoop();
   leerSensorAire();
   leerSensorTemperaturaHumedad();
+  leerSensorPolvo();
 }
