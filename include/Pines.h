@@ -7,8 +7,9 @@
 #define SENSOR_AIRE A0
 #define SENSOR_TEMPERATURA_HUMEDAD D4
 #define BUZZER D7
-#define SENSOR_POLVO D8
+
+const int sensorPolvo = 8;
 
 void leerSensorPolvo();
 
-void leerLeds();
+void inicializarPines();

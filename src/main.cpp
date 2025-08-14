@@ -12,7 +12,7 @@
 
 void setup() {
   Serial.begin(9600);
-  leerLeds();
+  inicializarPines();
   inicializarSensorTemperaturaHumedad();
   bool wifiConectado = conectarWiFi();
   if (wifiConectado) {
