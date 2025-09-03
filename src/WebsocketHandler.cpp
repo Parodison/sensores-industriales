@@ -22,8 +22,8 @@ void eventosWebSocket(WStype_t tipo, uint8_t * payload, size_t length) {
 }
 
 void conectarWebSocket() {
-    String path = "/api/sensores/ws?tipo=microcontrolador&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWNyb2NvbnRyb2xhZG9yIjoiU2Vuc29yIEluZHVzdHJpYWwifQ.ZrPbA9ADC8zqCKoSVq6yX2p6bf2CCZylY5g2x_C3v0o";
-    websocket.begin("192.168.100.31", 8000, path.c_str());
+    String path = "/api/sensores/ws?tipo=microcontrolador&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWNyb2NvbnRyb2xhZG9yIjoiU2Vuc29yIEluZHVzdHJpYWwifQ.0VXPDRG9ZBCgPfSiUstSfQ-SrTsKf5EpuBIhfceXFgc";
+    websocket.begin("200.108.134.158", 8000, path.c_str());
     websocket.onEvent(eventosWebSocket);
     websocket.setReconnectInterval(5000);
 }

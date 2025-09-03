@@ -56,6 +56,7 @@ void leerSensorTemperaturaHumedad()
         if (isnan(temperatura) || isnan(humedad))
         {
             Serial.println("Error al leer temperatura y humedad");
+            return;
         }
 
         if (temperatura != temperaturaActual || humedad != humedadActual)

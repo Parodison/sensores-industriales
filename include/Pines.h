@@ -8,7 +8,8 @@
 #define SENSOR_TEMPERATURA_HUMEDAD D4
 #define BUZZER D7
 
-const int sensorPolvo = 8;
+
+const int sensorPolvo = D8;
 
 void leerSensorPolvo();
 
