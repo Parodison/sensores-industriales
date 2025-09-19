@@ -35,7 +35,7 @@ void leerSensorAire() {
                 digitalWrite(LED_ROJO, HIGH);
                 digitalWrite(LED_AZUL, LOW);
                 digitalWrite(LED_AMARILLO, LOW);
-                digitalWrite(BUZZER, HIGH);
+                digitalWrite(BUZZER, LOW); 
             }
 
             StaticJsonDocument<200> doc;

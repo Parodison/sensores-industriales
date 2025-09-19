@@ -37,7 +37,7 @@ void leerSensorPolvo() {
   }
 
   if ((now - sampleStartTime) >= sampleTimeMs) {
-    float ratio = lowPulseOccupancy / (sampleTimeMs * 10.0);  // conv. a porcentaje
+    float ratio = lowPulseOccupancy / (sampleTimeMs * 10.0);  
     float concentrationRaw = 1.1 * pow(ratio, 3) - 3.8 * pow(ratio, 2) + 520 * ratio + 0.62;
     float concentrationCorr = concentrationRaw * correctionFactor;
     float pm25Corr = concentrationCorr * 0.075;
@@ -55,7 +55,6 @@ void leerSensorPolvo() {
     Serial.println(pm25Corr, 2);
     Serial.println("--------------------------------\n");
 
-    // Reiniciar variables
     lowPulseOccupancy = 0;
     sampleStartTime = now;
 

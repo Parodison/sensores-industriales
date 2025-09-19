@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include "WiFiManager.h"
 
-const char* ssid = "Familia Ferreira";
-const char* password = "021752565";
+const char* ssid = "wifi";
+const char* password = "kathifinss";
 
 bool conectarWiFi() {
     WiFi.begin(ssid, password);
